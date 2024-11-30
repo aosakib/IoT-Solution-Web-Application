@@ -1,0 +1,58 @@
+﻿@model IoT_Solution_Web_Application.Models.TemperatureDataTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TemperatureDataTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Environment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Environment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SetPoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SetPoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Output)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Output)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Voltage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Voltage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

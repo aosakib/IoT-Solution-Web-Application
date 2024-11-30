@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">About Raspberry Pi  Solution</h1>
+        <p class="lead">
+            Utilize Raspberry Pi and Python to retrieve sensor data, handle alarms and store data in cloud database. This Solution is applicable for both Household and for Industrial Use
+        </p>
+        
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Goals</h2>
+            <p>
+            <p style="list-style-type: disc; display: list-item;">Implementation of Sensor Data Collection Using Raspberry Pi.</p>
+            <p style="list-style-type: disc; display: list-item;">Develop an Alarm System for Temperature Monitoring.</p>
+            <p style="list-style-type: disc; display: list-item;">Store Data in the Cloud.</p>
+            <p style="list-style-type: disc; display: list-item;">Enable Remote Data Communication via MQTT.</p>
+
+            </p>
+            
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Use Cases</h2>
+            <p style="list-style-type: disc; display: list-item;">Smart Home Temperature Monitoring System.</p>
+            <p style="list-style-type: disc; display: list-item;">Industrial Environment Monitoring.</p>
+            <p style="list-style-type: disc; display: list-item;">Data Driven predictive Forecasting.</p>
+            <p style="list-style-type: disc; display: list-item;">Greenhouse Temperature Control.</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Solution Description</h2>
+            <p> <strong>Part One: </strong>Setup Raspberry Pi and Retrieve Temperature Data.</p>
+            <p style="list-style-type: disc; display: list-item;">Raspberry Pi Setup.</p>
+            <p style="list-style-type: disc; display: list-item;">Collection of Temperature Data with Python Script.</p>
+            <p style="list-style-type: disc; display: list-item;">Lowpass Filter to remove noise.</p>
+            <p style="list-style-type: disc; display: list-item;">Alarm system using LED and PWM to indicate temperature threshold.</p>
+
+            <p> <strong>Part Two: </strong>Data Storage and Analysis.</p>
+            <p style="list-style-type: disc; display: list-item;">Store sensor data in ThinkSpeak.</p>
+            <p style="list-style-type: disc; display: list-item;">Push data to MongoDB for cloud-based monitoring.</p>
+            <p style="list-style-type: disc; display: list-item;">Data Analysis.</p>
+            
+            <p> <strong>Part Three: </strong>Communication with MQTT</p>
+            <p style="list-style-type: disc; display: list-item;">MQTT Setup</p>
+            <p style="list-style-type: disc; display: list-item;">Publish temperature data from Raspberry Pi to MQTT broker.</p>
+
+
+        </section>
+    </div>
+</main>

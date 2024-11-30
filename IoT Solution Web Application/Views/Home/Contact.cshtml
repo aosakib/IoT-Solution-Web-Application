@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Information About The IoT Solution";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title</h2>
+
+    <style>
+        .justified {
+            text-align: justify;
+        }
+    </style>
+
+    <p class="justified">
+        This project involves the development of a comprehensive temperature monitoring and control system using a Raspberry Pi.
+        The system integrates multiple temperature sensors, such asTC74, to collect real-time data, which is processed and filtered using a Lowpass Filter to ensure accuracy by reducing noise.
+        The Raspberry Pi acts as the central hub, interfacing with sensors via Python scripts and managing alarms using LEDs and push buttons to indicate and acknowledge critical temperature thresholds. Data is stored in MongoDB, both locally and in the cloud, and also sent to ThingSpeak for remote visualization.
+        Additionally, the project utilizes MQTT as a lightweight messaging protocol to publish temperature data to an MQTT broker, enabling real-time data sharing with other devices or systems.
+        With features like real-time monitoring, secure communication, and scalability, this project is suitable for applications in smart homes, industrial environments, greenhouses, and data-driven predictive forecasting systems. The system also incorporates essential cybersecurity measures, ensuring reliable and secure operation in IoT environments.
+
+    </p>
+    <p><strong>System Overview sketch of the project</strong></p>
+    <img src="~/RaspSolution.png" alt="System Overview" style="max-width: 100%; height: auto;">
+
+    <p><strong>Flow Diagram of the System</strong></p>
+    <img src="~/Flow Untitled Diagram.png" alt="Flow Diagram" style="max-width: 100%; height: auto; justify-content:center;">
+   
+    <p style="margin-top:100px;"> <strong>ThingSpeak Integration </strong></pstyle="margin-bottom:>
+    <p>ThingSpeak is a popular choice for IoT and data logging for various reasons: </p>
+    <p style="list-style-type: disc; display: list-item;">Real Time Data Collection.</p>
+    <p style="list-style-type: disc; display: list-item;">Data Visualization.</p>
+    <p style="list-style-type: disc; display: list-item;">Ease of Integration.</p>
+    <p style="list-style-type: disc; display: list-item;">Scalable.</p>
+
+    <p> <strong>Storing Data In Database </strong></p>
+    <p style="list-style-type: disc; display: list-item;">Flexible Schema for Sensor Data.</p>
+    <p style="list-style-type: disc; display: list-item;">Real-Time Data Handling. </p>
+    <p style="list-style-type: disc; display: list-item;">Scalability.</p>
+    <p style="list-style-type: disc; display: list-item;">Integration with Cloud and IoT Platform.</p>
+    <p style="list-style-type: disc; display: list-item;">Efficient Querying and Data Analysis.</p>
+
+    <p> <strong>MQTT as a Standard Messaging Protocol  </strong></p>
+    <p>
+        Message Queuing Telemetry Transport (MQTT) is highly useful with IoT Projects:
+    </p>
+    <p style="list-style-type: disc; display: list-item;">Lightweight and Efficient Communication.</p>
+    <p style="list-style-type: disc; display: list-item;">Publish/Subscribe Architecture.</p>
+    <p style="list-style-type: disc; display: list-item;">Low Latency for Real-Time Data.</p>
+
+    <p> <strong>Security Consideration with Raspberry Pi  </strong></p>
+    <p style="list-style-type: disc; display: list-item;">Change Default Credentials</p>
+    <p style="list-style-type: disc; display: list-item;">Enable Firewall.</p>
+    <p style="list-style-type: disc; display: list-item;">Secure SSH Access.</p>
+    <p style="list-style-type: disc; display: list-item;">Updated OS .</p>
+    <p style="list-style-type: disc; display: list-item;">Encrypt Data and Communication.</p>
+
+    <p> <strong>Security Consideration with MQTT  </strong></p>
+    <p style="list-style-type: disc; display: list-item;">Use TLS/SSL Encryption.</p>
+    <p style="list-style-type: disc; display: list-item;">Authentication and Authorization.</p>
+    <p style="list-style-type: disc; display: list-item;">Limit Open Ports and Control Access.</p>
+    <p style="list-style-type: disc; display: list-item;">Prevent DoS (Denial of Service) Attack.</p>
+    <p style="list-style-type: disc; display: list-item;">Message Integrity and Retention Settings.</p>
+
+    <p> <strong>References: </strong></p>
+    <p style="list-style-type: disc; display: list-item;">
+
+        <a href="https://www.halvorsen.blog/documents/technology/cyber_security/Resources/Cyber%20Security.pdf" target="_blank">Halvorsen Blog Cyber Security </a>
+
+
+    </p>
+
+
+    <p style="list-style-type: disc; display: list-item;">
+
+        <a href="https://www.halvorsen.blog/documents/teaching/courses/iot/lab_raspberrypi.php" target="_blank">Halvorsen Blog Assignment Work</a>
+
+    </p>
+
+
+</main>
